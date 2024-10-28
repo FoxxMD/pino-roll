@@ -38,7 +38,7 @@ test('parseSize()', async ({ equal, throws }) => {
 })
 
 test('parseFrequency()', async ({ same, throws }) => {
-  const today = new Date()
+  const today = new Date('27 Oct 2024 00:00:00 CET')
 
   same(parseFrequency(), null, 'returns null on empty input')
   same(
